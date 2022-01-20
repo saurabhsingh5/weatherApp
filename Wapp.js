@@ -21,7 +21,7 @@ searchInputBox.addEventListener('keypress', (event) => {
 
 //Get weather report
 function getWeatherReport(city) {
-    fetch(`${weatherApi.baseUrl}?q=${city}$appid=${weatherApi.key}$units=metric`)
+    fetch(`${weatherApi.baseUrl}?q=${city}&appid=${weatherApi.key}&units=metric`)
     .then(weather => {
         return weather.json();
     }).then(showWeatherReport);
@@ -67,8 +67,8 @@ function showWeatherReport(weather) {
         document.body.style.backgroundImage = "url('https://cdn.pixabay.com/photo/2019/12/30/20/34/road-4730553_960_720.jpg')";
     }
 
-    else if(weatherType.textContent == 'Snow') {
-        document.body.style.backgroundImage = "url('https://cdn.pixabay.com/photo/2019/12/30/20/34/road-4730553_960_720.jpg')";
+    else if(weatherType.textContent == 'Fog') {
+        document.body.style.backgroundImage = "url('https://cdn.pixabay.com/photo/2021/12/07/12/35/church-6853164_1280.jpg')";
     }
 
     else if(weatherType.textContent == 'Thunderstorm') {
@@ -88,7 +88,7 @@ function dateManage(dateArg) {
 
     let year = dateArg.getFullYear();
     let month = months[dateArg.getMonth()];
-    let date = date.Arg.getDate();
+    let date = dateArg.getDate();
     let day = days[dateArg.getDay()];
 
     return `${date} ${month} ${day}, ${year}`;
