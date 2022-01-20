@@ -1,6 +1,5 @@
 //api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 //780113826ba186951856951dd07b4919
-
 const weatherApi = {
     key:"780113826ba186951856951dd07b4919",
     baseUrl:"https://api.openweathermap.org/data/2.5/weather"
@@ -51,7 +50,7 @@ function showWeatherReport(weather) {
         document.body.style.backgroundImage = "url('https://image.freepik.com/free-photo/cloud-blue-sky_1232-3108.jpg')";
     }
 
-    else if(weatherType.textContent == 'Cloud') {
+    else if(weatherType.textContent == 'Clouds') {
         document.body.style.backgroundImage = "url('https://cdn.pixabay.com/photo/2016/06/22/16/22/clouds-1473311_960_720.jpg')";
     }
 
