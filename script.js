@@ -46,10 +46,11 @@ function showWeatherReport(weather) {
     let todayDate = new Date();
     date.innerText = dateManage(todayDate);
 
-    if(weatherType.textContent == 'Clear') {
-        document.body.style.backgroundImage = "url('https://image.freepik.com/free-photo/cloud-blue-sky_1232-3108.jpg')";
-    }
 
+    if(weatherType.textContent == 'Thunderstorm') {
+        document.body.style.backgroundImage = "url('https://cdn.pixabay.com/photo/2018/05/20/22/55/thunderstorm-3417042_960_720.jpg')";
+    }
+    
     else if(weatherType.textContent == 'Clouds') {
         document.body.style.backgroundImage = "url('https://cdn.pixabay.com/photo/2016/06/22/16/22/clouds-1473311_960_720.jpg')";
     }
@@ -69,9 +70,9 @@ function showWeatherReport(weather) {
     else if(weatherType.textContent == 'Fog') {
         document.body.style.backgroundImage = "url('https://cdn.pixabay.com/photo/2021/12/07/12/35/church-6853164_1280.jpg')";
     }
-
-    else if(weatherType.textContent == 'Thunderstorm') {
-        document.body.style.backgroundImage = "url('https://cdn.pixabay.com/photo/2018/05/20/22/55/thunderstorm-3417042_960_720.jpg')";
+    
+    if(weatherType.textContent == 'Clear') {
+        document.body.style.backgroundImage = "url('https://image.freepik.com/free-photo/cloud-blue-sky_1232-3108.jpg')";
     }
 
 
