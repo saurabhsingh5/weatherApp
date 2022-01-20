@@ -71,16 +71,16 @@ function showWeatherReport(weather) {
         document.body.style.backgroundImage = "url('https://cdn.pixabay.com/photo/2021/12/07/12/35/church-6853164_1280.jpg')";
     }
     
-    else if(weatherType.textContent == 'Clear') {
-        document.body.style.backgroundImage = "url('https://image.freepik.com/free-photo/cloud-blue-sky_1232-3108.jpg')";
-    }
-    
     else if(weatherType.textContent == 'Smoke') {
         document.body.style.backgroundImage = "url('https://www.dreamstime.com/stock-photo-aerial-view-over-hong-kong-tai-lam-chung-reservoir-under-smokey-weather-image90616905')";
     }
     
     else if(weatherType.textContent == 'Mist') {
         document.body.style.backgroundImage = "url('https://cdn.pixabay.com/photo/2016/07/22/16/29/fog-1535201_960_720.jpg')";
+    }
+    
+     else if(weatherType.textContent == 'Clear') {
+        document.body.style.backgroundImage = "url('https://image.freepik.com/free-photo/cloud-blue-sky_1232-3108.jpg')";
     }
     
 
